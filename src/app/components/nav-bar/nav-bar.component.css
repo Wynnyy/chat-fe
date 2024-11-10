@@ -1,0 +1,20 @@
+.wrapper{
+ width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+.chatty-logo{
+  background: #9f419f;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  height: 30%;
+}
+.onlineMembers{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}

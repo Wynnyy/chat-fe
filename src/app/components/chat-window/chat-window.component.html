@@ -1,0 +1,28 @@
+<div class="chatty" >
+
+  <app-nav-bar style="width: 15%"></app-nav-bar>
+
+  <div class="chat-window">
+
+    <div class="message-wrapper"  #scrollWindow>
+      <div class="message-output" *ngFor="let msg of webSocketService.messages">
+        <div class="name-circle">R</div>
+        <div class="message-bubble"> {{ msg }}</div>
+      </div>
+    </div>
+
+  <div class="input-wrapper" >
+    <div class="input-window">
+      <input class="chat-input"  (keydown.enter)="send()" [(ngModel)]="message" placeholder="Type a message"/>
+      <div class="button-wrapper" (click)="send()">
+        <div class="send-button"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+
+
+
